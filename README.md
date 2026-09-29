@@ -1,115 +1,25 @@
-<p align="center"><a href="https://oddfar.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://note.oddfar.com/img/web.png" alt="logo"></a></p>
+# Campus
 
-<p align="center">
-  <a href="https://github.com/oddfar/campus/stargazers"><img src="https://img.shields.io/github/stars/oddfar/campus.svg"></a>
-	<a href="https://github.com/oddfar/campus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
-</p>
-<p align="center"> Campus，一个简单的前后端分离后台管理系统，RuoYi-Vue简单版 </p>
+本仓库是「Campus」的安卓版本获取入口，附使用资料索引。
 
-<h2 align="center">Campus</h2>
+## 安装文件资源（夸克网盘）
 
- [项目文档](https://oddfar.github.io/campus-doc/)  | [笔记仓库](https://github.com/oddfar/notes)  |  [我的博客](https://oddfar.com)  
+> **Campus 安装文件资源（夸克网盘）**：[https://pan.quark.cn/s/48b201baea5d](https://pan.quark.cn/s/48b201baea5d)
 
-## 项目介绍
+## 官方项目
 
-> 想重构之前的校园信息墙项目，又想学习若依项目，就手写了 RuoYi-Vue 并修改了部分功能，于是有了这套后台系统，所以取名为campus
+- 上游项目：[oddfar/campus](https://github.com/oddfar/campus)
 
-**Campus** 一款简单的后台管理系统，**RuoYi-Vue简单版**，快速开发框架，适合大学生开发毕设，或其他小项目。
+## 更多资料
 
-使用Spring Boot、Spring Security、MyBatis Plus、Jwt、Vue等技术
+- [下载与安装教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Campus/%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+- [常见问题与故障排查](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Campus/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5.md)
+- [校园地图与动态使用指南](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Campus/%E6%A0%A1%E5%9B%AD%E5%9C%B0%E5%9B%BE%E4%B8%8E%E5%8A%A8%E6%80%81%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
+- [注册登录与校园认证](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Campus/%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95%E4%B8%8E%E6%A0%A1%E5%9B%AD%E8%AE%A4%E8%AF%81.md)
+- [课表与校园服务功能](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Campus/%E8%AF%BE%E8%A1%A8%E4%B8%8E%E6%A0%A1%E5%9B%AD%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD.md)
+- [隐私与权限设置](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Campus/%E9%9A%90%E7%A7%81%E4%B8%8E%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE.md)
+- [全部软件目录](https://github.com/alipymanbu/Android/blob/master/%E5%85%A8%E9%83%A8%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.md)
 
-您可以根据此项目，快速开发毕设项目，无需注重系统代码，只需业务代码！
+---
 
-## 项目文档
-
-- 项目在线预览地址：暂无
-- 项目文档：<https://oddfar.github.io/campus-doc/>
-
-## 对比RuoYi
-
-### 功能差异
-
-| 功能         | 本框架                                            | RuoYi             |
-| ------------ | ------------------------------------------------- | ----------------- |
-| 权限认证     | 增加接口管理，动态分配角色权限                    | 不支持动态分配    |
-| ORM框架      | 采用 Mybatis-Plus                                 | 采用 Mybatis      |
-| 数据分页     | 采用 Mybatis-Plus 分页插件<br/>框架对其进行了扩展 | 采用 PageHelper   |
-| 用户依据     | 涉及表使用用户ID判断，方便更新用户                | 根据用户userName  |
-| 数据库主键   | 采用 雪花ID                                       | 采用 数据库自增ID |
-| SQL监控      | 采用 p6spy 可输出完整SQL与执行时间监控            | log输出           |
-| 多数据源框架 | dynamic-datasource                                | druid             |
-
-### 内置功能
-
-- [x] 用户管理：用户的管理配置。
-- [x] 菜单管理：配置系统菜单，操作权限，按钮权限标识等。
-- [x] 角色管理：角色菜单权限分配。
-- [x] 字典管理：对系统中经常使用的一些较为固定的数据进行维护。
-- [x] 参数管理：对系统动态配置常用参数。
-- [x] 操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-- [x] 登录日志：系统登录日志记录查询包含登录异常。
-
-新增
-
-- [x] 接口管理：动态分配角色接口权限
-
-
-
-## 贡献代码
-
-若您有好的想法，发现一些 **BUG** 并修复了，欢迎提交 **Pull Request** 参与开源贡献
-
-发起 pull request 请求，提交到 master 分支，等待作者合并
-
-## 致谢
-
-此项目参考了一些开源项目的解决方案，在此感谢他们的开源
-
-- Vue后台管理模板：[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-- RuoYi：<https://gitee.com/y_project/RuoYi>
-- RuoYi Pro：<https://gitee.com/zhijiantianya/ruoyi-vue-pro>
-- Guns：<https://gitee.com/stylefeng/guns>
-
-
-
-## 演示图
-
-
-
-|                            admin                             |                                                              |
-| :----------------------------------------------------------: | ------------------------------------------------------------ |
-| ![image-20230221090307473](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221090307473.png) | ![image-20230221091209986](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221091209986.png) |
-| ![image-20230221091408302](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221091408302.png) | ![image-20230221091331128](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221091331128.png) |
-
-
-
-> 案例：校园信息墙
-
-<https://github.com/oddfar/campus-example>
-
-网页端
-
-| web                                                          |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20230221091804015](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221091804015.png) | ![image-20230221091942563](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221091942563.png) |
-| ![image-20230221092022247](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221092022247.png) | ![image-20230221092059047](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221092059047.png) |
-| ![image-20230221092122331](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221092122331.png) | ![image-20230221092152935](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230221092152935.png) |
-
-移动端（小程序）
-
-| 移动端                                                       |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20230412210057613](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210057613.png) | ![image-20230412210148423](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210148423.png) | ![image-20230412210214019](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210214019.png) |
-| ![image-20230412210256253](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210256253.png) | ![image-20230412210328222](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210328222.png) | ![image-20230412210405497](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210405497.png) |
-| ![image-20230412210534659](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210534659.png) | ![image-20230412210606552](https://gcore.jsdelivr.net/gh/oddfar/static/campus/doc/image-20230412210606552.png) |                                                              |
-
-
-
-## 鸣谢
-
-> [IntelliJ IDEA](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一个在各个方面都最大程度地提高开发人员的生产力的 IDE，适用于 JVM 平台语言。
-
-特别感谢 [JetBrains](https://www.jetbrains.com/?from=campus) 为开源项目提供免费的 [IntelliJ IDEA](https://www.jetbrains.com/idea/?from=campus) 等 IDE 的授权  
-[<img src=".github/jetbrains-variant.png" width="200"/>](https://www.jetbrains.com/?from=campus)
-
-[<img src="https://api.gitsponsors.com/api/badge/img?id=604413048" height="20">](https://api.gitsponsors.com/api/badge/link?p=niQ5QtMLM8j/pwmu1t7W/PukNq0DuMmxeh7jrYpEVXw8OxxqEiBr625efTYpF62ZYZsSv3UlE6J8ajT1/9Y4zXRfWKB//aiasNzIKMZoHF0+o5giGXeIJ3O//SM6Mi9cxbGNPczJ0fNgTh5ZnFo44Q==)
+> 本仓库由上游项目 fork 而来，原始说明见[上游仓库](https://github.com/oddfar/campus)。
